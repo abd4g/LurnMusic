@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        box-sizing: border-box;
+    }   
+    .hero{
+        height: 100vh;
+        width: 100%;
+        background-image:  url("./images/st.jpg");
+        background-size: cover;
+        background-position: center;
+   }
+   nav{
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       padding-top: 45px;
+       padding-left: 8%;
+       padding-right: 8%;
+   }
+   .logo{
+       color:rgb(18, 151, 123);
+       font-size: 35px;
+       letter-spacing: 1px;
+       cursor: pointer;
+   }
+   nav ul li{
+       list-style-type: non;
+       display: inline-block;
+       padding: 10px 25px;
+
+   }
+   nav ul li a{
+       color: rgb(196, 235, 226);
+       text-decoration: none;
+       font-weight: bold;
+       text-transform: capitalize;
+       }
+       nav ul li a:hover{
+           color: rgb(18, 151, 123);
+           transition: -4s;
+       }
+   .btn{
+       background-color: rgb(18, 151, 123);
+       color: rgb(196, 235, 226);
+       text-decoration: none;
+       border: 2px solid transparent;
+       font-weight: bold;
+       padding: 10px 25px ;
+       border-radius: 40px;
+       transition: transform .4s;
+   }
+   .btn:hover{
+      background-color: transparent;
+    border: 2px solid rgb(18, 151, 123);
+    cursor: pointer;
+   }
+   .content{
+       position: absolute;
+       top: 50%;
+       left: 4%;
+       transform: translateY(-50%);
+   }
+
+  h1{
+       color: rgb(240, 231, 231);
+       margin: 20px 0px 20px;
+       font-size: 50px;
+   }
+  /* h3{
+       color: aliceblue;
+       font-size: 25px;
+       margin-bottom: 50px;
+   }
+   h4{
+       color: aquamarine;
+       letter-spacing: 2px;
+       font-size: 20px;
+   }
+*/
+ .newslatter form{
+     width: 380px;
+     max-width: 100%;
+     position: relative;
+ }
+ .newslatter form input:first-child{
+     display: inline-block;
+     width: 100%;
+     padding: 14px 130px 14px 15px;
+     border: 2px solid rgb(18, 151, 123);
+     border-radius: 30px;
+ }
+ .newslatter form input:last-child{
+     position: absolute;
+     display: inline-block;
+     outline: none;
+     border: none;
+     padding: 10px 30px;
+     border-radius: 30px;
+     background-color:rgb(18, 151, 123) ;
+     color: white;
+     box-shadow: 0px 0px 5px #000,0px 0px 5px #858585;
+     top: 5px;
+     right: 5px;
+
+ }
+ .about{
+     width: 100%;
+     padding: 100px 0px;
+     background-color: #1f1f1f;
+ }
+.about img{
+    height: auto;
+    width: 430px;
+}
+.about-text{
+    width: 550px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h2{
+    color: rgb(61, 136, 108);
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text p{
+    color: rgb(195, 255, 235);
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+button{
+    background-color: rgb(18, 151, 123);
+    color: rgb(195, 255, 235);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+button:hover{
+    background-color: transparent;
+    border: 2px solid rgb(18, 151, 123);
+    cursor: pointer;
+}
+.services{
+    background: #1c1b1b;
+    width: 100%;
+    padding: 100px 0px;
+}
+.title h2{
+    color: rgb(61, 136, 108);
+    font-size: 75px;
+    width: 1130px;
+    margin:30px auto;
+    text-align: center;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:50px;
+}
+.card{height: 365px;
+width: 335px;
+padding: 20px 35px;
+background:#1f1f1f;
+border-radius: 20px;
+margin: 15px;
+position: relative;
+overflow: hidden;
+text-align: center;
+}
+.card i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: rgb(195, 255, 235);
+}
+h5{
+    color: rgb(195, 255, 235);
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.pra p{
+    color: rgb(18, 151, 123);
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+.card .button{
+    background-color: rgb(18, 151, 123);
+    color: rgb(195, 255, 235);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.card .button:hover{
+    background-color: transparent;
+    border: 2px solid rgb(18, 151, 123);
+    cursor: pointer;
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: #1f1f1f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer p:nth-child(1){
+    font-size: 30px;
+    color: rgb(54, 220, 184);
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+footer p:nth-child(2){
+    color: rgb(31, 135, 112);
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+.social{
+    display: flex;
+}
+.social a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(18, 151, 123);
+    border-radius: 50%;
+    margin: 22px 10px;
+
+}
+</style>
+<body>
+    <div class="hero">
+        <nav>
+            <h2 class="logo">LurnMusic</h2>
+            <ul>
+                <li><a href="#" >Home</a></li>
+                <li><a href="file:///C:/Users/Home/Desktop/stor/Sservices.html" >Services</a></li>
+                <li><a href="#" >About Us</a></li>
+                <li><a href="#" >Start Now</a></li>
+                <li><a href="#" >Contact</a></li>
+            </ul>
+            <a href="file:///C:/Users/Home/Desktop/stor/sign%20up.html" class="btn">Sign Up</a>     
+          </nav>
+          <nav class="content">
+            <h1>The Complete<span> Audio</span>  Producer</h1> 
+              <div class="newslatter">
+                    <form>
+                        <input type="email" name="emaile" id="mail" placeholder="Entre your Email">
+                        <input type="submit" name="submit" value="Start">
+                    </form>
+                </div>
+          </nav>
+    </div>
+    <section class="about">
+        <div class="main">
+            <img src="./images/zrt.webp">
+            <div class="about-text">
+                <h2>Description :</h2>
+                <p>Learn Professional Audio Production in 2020
+                    by mastering the most modern and
+                    advanced skills from a world
+                    renowned Producer/ Audio Engineer.
+                    Clarian’s students have gone on to
+                    working and contributing to some of the biggest
+                    and most reputable Audio Production
+                    Companies and Platforms in the world like Universal, 
+                    Warner, The BBC, Spotify, Landr,
+                    Splice etc…</p>
+                    <button type="button">more information</button>
+ 
+            </div>
+        </div>
+
+    </section>
+    <div class="services">
+        <div class="title">
+            <h2>Services</h2>
+        </div>
+        <div class="box">
+            <div class="card">
+                <i class="fas fa-microphone"></i>
+                <h5>Recoding</h5>
+                <div class="pra">
+                    <p>A 3-Disc set featuring over 4.5 Hours of Premium Hands On Training
+                         to help you master your home recording studio.Hosted by Abderrahim zaoug ,
+                          this is the one stop training on Home Recording that you’ve been looking for.
+                    </p>
+                    <p style="text-align: center;">
+                        <a class="button
+                        " href="#">Read More</a>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <i class="fas fa-boombox"></i>
+                <h5>Mixing and mastering</h5>
+                <div class="pra">
+                    <p>Welcome to the ultimate EDM production course.  With over 10 hours of online training,
+                         articles, tips and practical steps you can follow, this is the most comprehensive EDM
+                          production course available on Udemy
+                         and possibly anywhere online. 
+                    </p>
+                    <p style="text-align: center;">
+                        <a class="button
+                        " href="#">Read More</a>
+                    </p>
+            </div>
+            
+        </div>
+    </div>
+
+  <footer>
+      <p>Contact me</p>
+      <p>for more information Contact me </p>
+      <div class="social">
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-discord"></i></a>
+      </div>
+      <p class="end">copyright</p>
+  </footer>
+</body>
+</html>
